@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20a580bfb007a119b4a690cd71bf40b3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_20a580bfb007a119b4a690cd71bf40b3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20a580bfb007a119b4a690cd71bf40b3 = L.map(
+                "map_20a580bfb007a119b4a690cd71bf40b3",
+                {
+                    center: [48.5, -95.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c49214b72eeb9cac8bdce0e1a70094a7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_20a580bfb007a119b4a690cd71bf40b3);
+        
+    
+            var marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4 = L.markerClusterGroup(
+                {}
+            );
+            map_20a580bfb007a119b4a690cd71bf40b3.addLayer(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var marker_726710b8936b3a4272205e7bbff789ba = L.marker(
+                [43.6532, -79.3832],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_82d46435d6fb89bf44eb27163ca83b8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_726710b8936b3a4272205e7bbff789ba.setIcon(icon_82d46435d6fb89bf44eb27163ca83b8f);
+        
+    
+        var popup_3f69a0f7c0c66f188c26fabc5d77ef9d = L.popup({"maxWidth": 300});
+
+        
+            var html_a1d5a3f6ac7270553e337619b640125c = $(`<div id="html_a1d5a3f6ac7270553e337619b640125c" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         OperaQ     </div>     <div style="font-size:14px;">         <a href='https://www.operaqto.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_3f69a0f7c0c66f188c26fabc5d77ef9d.setContent(html_a1d5a3f6ac7270553e337619b640125c);
+        
+
+        marker_726710b8936b3a4272205e7bbff789ba.bindPopup(popup_3f69a0f7c0c66f188c26fabc5d77ef9d)
+        ;
+
+        
+    
+    
+            var marker_db8daccaa7099098e1126e7fb4875271 = L.marker(
+                [49.2827, -123.1207],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_7c706a318d65d4dde42d5764aba89b3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_db8daccaa7099098e1126e7fb4875271.setIcon(icon_7c706a318d65d4dde42d5764aba89b3a);
+        
+    
+        var popup_2937f712c439082da24a26e0a7861fa3 = L.popup({"maxWidth": 300});
+
+        
+            var html_472f8765164e812ac3e12226312051d3 = $(`<div id="html_472f8765164e812ac3e12226312051d3" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Frank Theatre Company     </div>     <div style="font-size:14px;">         <a href='https://franktheatre.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_2937f712c439082da24a26e0a7861fa3.setContent(html_472f8765164e812ac3e12226312051d3);
+        
+
+        marker_db8daccaa7099098e1126e7fb4875271.bindPopup(popup_2937f712c439082da24a26e0a7861fa3)
+        ;
+
+        
+    
+    
+            var marker_d12b011c89729c8a42b9a836a02a411e = L.marker(
+                [43.7001, -79.4163],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_347a4b22eceb38a94614c75125e45a7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d12b011c89729c8a42b9a836a02a411e.setIcon(icon_347a4b22eceb38a94614c75125e45a7b);
+        
+    
+        var popup_8b543f9aa70a6fbb4a3cb9e672a93dcb = L.popup({"maxWidth": 300});
+
+        
+            var html_b2af7837f042ba236a3cf2cebd6b39fc = $(`<div id="html_b2af7837f042ba236a3cf2cebd6b39fc" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Essential Opera     </div>     <div style="font-size:14px;">         <a href='https://essentialopera.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_8b543f9aa70a6fbb4a3cb9e672a93dcb.setContent(html_b2af7837f042ba236a3cf2cebd6b39fc);
+        
+
+        marker_d12b011c89729c8a42b9a836a02a411e.bindPopup(popup_8b543f9aa70a6fbb4a3cb9e672a93dcb)
+        ;
+
+        
+    
+    
+            var marker_41a6ee2ebb112fb16960ca913db89d18 = L.marker(
+                [43.65107, -79.347015],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_1672bc48974dfd453b22f4dbeeb03901 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_41a6ee2ebb112fb16960ca913db89d18.setIcon(icon_1672bc48974dfd453b22f4dbeeb03901);
+        
+    
+        var popup_ad804745d0f3f9733d5d6454bc439395 = L.popup({"maxWidth": 300});
+
+        
+            var html_117ea5bec8b212a0756ea36222afa423 = $(`<div id="html_117ea5bec8b212a0756ea36222afa423" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Amplified Opera     </div>     <div style="font-size:14px;">         <a href='https://amplifiedopera.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_ad804745d0f3f9733d5d6454bc439395.setContent(html_117ea5bec8b212a0756ea36222afa423);
+        
+
+        marker_41a6ee2ebb112fb16960ca913db89d18.bindPopup(popup_ad804745d0f3f9733d5d6454bc439395)
+        ;
+
+        
+    
+    
+            var marker_88e787cc68aa3efed7c6abe765b061e3 = L.marker(
+                [47.6062, -122.3321],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_97942302c98468d70f5a88666e875631 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_88e787cc68aa3efed7c6abe765b061e3.setIcon(icon_97942302c98468d70f5a88666e875631);
+        
+    
+        var popup_37cdf6956d0413a1a6dea619b94fb105 = L.popup({"maxWidth": 300});
+
+        
+            var html_845d222150f389fe8e109ebb032c2b7a = $(`<div id="html_845d222150f389fe8e109ebb032c2b7a" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Lowbrow Opera Collective     </div>     <div style="font-size:14px;">         <a href='https://lowbrowoc.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_37cdf6956d0413a1a6dea619b94fb105.setContent(html_845d222150f389fe8e109ebb032c2b7a);
+        
+
+        marker_88e787cc68aa3efed7c6abe765b061e3.bindPopup(popup_37cdf6956d0413a1a6dea619b94fb105)
+        ;
+
+        
+    
+    
+            var marker_efd30706fe3d0cd8eb964206f351ea0f = L.marker(
+                [47.6062, -122.3321],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_e25186429d34526d98d121d46ef878b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_efd30706fe3d0cd8eb964206f351ea0f.setIcon(icon_e25186429d34526d98d121d46ef878b1);
+        
+    
+        var popup_80063faf00773ea1f2f08a1f562ee46e = L.popup({"maxWidth": 300});
+
+        
+            var html_e827235311ca84f6815c8851f87d28e6 = $(`<div id="html_e827235311ca84f6815c8851f87d28e6" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Seattle Opera     </div>     <div style="font-size:14px;">         <a href='https://seattleopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_80063faf00773ea1f2f08a1f562ee46e.setContent(html_e827235311ca84f6815c8851f87d28e6);
+        
+
+        marker_efd30706fe3d0cd8eb964206f351ea0f.bindPopup(popup_80063faf00773ea1f2f08a1f562ee46e)
+        ;
+
+        
+    
+    
+            var marker_b776d348fbf8c3fb78be1876d8dbeb36 = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_9f7f7bb7bbfb3706963afbddcc2addaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b776d348fbf8c3fb78be1876d8dbeb36.setIcon(icon_9f7f7bb7bbfb3706963afbddcc2addaa);
+        
+    
+        var popup_43e24b6d60a88a8976b12235315a462d = L.popup({"maxWidth": 300});
+
+        
+            var html_16e2343b198cbe7a0e8a08bdbacd6ce9 = $(`<div id="html_16e2343b198cbe7a0e8a08bdbacd6ce9" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         LA Opera     </div>     <div style="font-size:14px;">         <a href='https://laopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_43e24b6d60a88a8976b12235315a462d.setContent(html_16e2343b198cbe7a0e8a08bdbacd6ce9);
+        
+
+        marker_b776d348fbf8c3fb78be1876d8dbeb36.bindPopup(popup_43e24b6d60a88a8976b12235315a462d)
+        ;
+
+        
+    
+    
+            var marker_29e6e7cbf82db61e0ae9d8030c29de85 = L.marker(
+                [37.7749, -122.4194],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_01a1988abf7e3f93335783105ece218a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_29e6e7cbf82db61e0ae9d8030c29de85.setIcon(icon_01a1988abf7e3f93335783105ece218a);
+        
+    
+        var popup_d0a9d3eeb82234f2c9d764182879f20f = L.popup({"maxWidth": 300});
+
+        
+            var html_eb733c8c62a2ec736b6c203abc73c6d6 = $(`<div id="html_eb733c8c62a2ec736b6c203abc73c6d6" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         San Francisco Opera     </div>     <div style="font-size:14px;">         <a href='https://sfopera.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_d0a9d3eeb82234f2c9d764182879f20f.setContent(html_eb733c8c62a2ec736b6c203abc73c6d6);
+        
+
+        marker_29e6e7cbf82db61e0ae9d8030c29de85.bindPopup(popup_d0a9d3eeb82234f2c9d764182879f20f)
+        ;
+
+        
+    
+    
+            var marker_881b4b0adb17f4b56ccd1f2b30edcd9d = L.marker(
+                [37.7749, -122.4194],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_25dbcf2e8088c217b4fae406d673ea80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_881b4b0adb17f4b56ccd1f2b30edcd9d.setIcon(icon_25dbcf2e8088c217b4fae406d673ea80);
+        
+    
+        var popup_58886f7ea7d40179069603d3eb5d4588 = L.popup({"maxWidth": 300});
+
+        
+            var html_7b7193e4d181bbc1f2892deb26d9991b = $(`<div id="html_7b7193e4d181bbc1f2892deb26d9991b" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Opera Parallèle     </div>     <div style="font-size:14px;">         <a href='https://operaparallele.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_58886f7ea7d40179069603d3eb5d4588.setContent(html_7b7193e4d181bbc1f2892deb26d9991b);
+        
+
+        marker_881b4b0adb17f4b56ccd1f2b30edcd9d.bindPopup(popup_58886f7ea7d40179069603d3eb5d4588)
+        ;
+
+        
+    
+    
+            var marker_32dbe73391fa8f5423eee3872c4d5c37 = L.marker(
+                [33.7701, -118.1937],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_9382c281379c447bf9b002238c5424e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_32dbe73391fa8f5423eee3872c4d5c37.setIcon(icon_9382c281379c447bf9b002238c5424e6);
+        
+    
+        var popup_d79cde745422003bf647f43a936d1692 = L.popup({"maxWidth": 300});
+
+        
+            var html_3fbcdc51507c48e46ee30841e6c77e35 = $(`<div id="html_3fbcdc51507c48e46ee30841e6c77e35" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Long Beach Opera     </div>     <div style="font-size:14px;">         <a href='https://longbeachopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_d79cde745422003bf647f43a936d1692.setContent(html_3fbcdc51507c48e46ee30841e6c77e35);
+        
+
+        marker_32dbe73391fa8f5423eee3872c4d5c37.bindPopup(popup_d79cde745422003bf647f43a936d1692)
+        ;
+
+        
+    
+    
+            var marker_4c87710d6951dcb534de497a388693b5 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_e5b96eee3eeca7e70eb1b24e4bd990da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4c87710d6951dcb534de497a388693b5.setIcon(icon_e5b96eee3eeca7e70eb1b24e4bd990da);
+        
+    
+        var popup_f125dd3413e4cb7f315ead48df93cd63 = L.popup({"maxWidth": 300});
+
+        
+            var html_cc282764f7562ae82aa186dbc69730f2 = $(`<div id="html_cc282764f7562ae82aa186dbc69730f2" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Thompson Street Opera Company     </div>     <div style="font-size:14px;">         <a href='https://thompsonstreetopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_f125dd3413e4cb7f315ead48df93cd63.setContent(html_cc282764f7562ae82aa186dbc69730f2);
+        
+
+        marker_4c87710d6951dcb534de497a388693b5.bindPopup(popup_f125dd3413e4cb7f315ead48df93cd63)
+        ;
+
+        
+    
+    
+            var marker_cb9bd99bf884e901d7f52c66ebd497bb = L.marker(
+                [44.9778, -93.265],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_600577e72505ae502472919ace2af0de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_cb9bd99bf884e901d7f52c66ebd497bb.setIcon(icon_600577e72505ae502472919ace2af0de);
+        
+    
+        var popup_7931bfb5c8e863204137a844f01a4b21 = L.popup({"maxWidth": 300});
+
+        
+            var html_3c2978e27d67a9e569aa237b3fcbdd43 = $(`<div id="html_3c2978e27d67a9e569aa237b3fcbdd43" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Journey North Opera Company     </div>     <div style="font-size:14px;">         <a href='https://journeynorthopera.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_7931bfb5c8e863204137a844f01a4b21.setContent(html_3c2978e27d67a9e569aa237b3fcbdd43);
+        
+
+        marker_cb9bd99bf884e901d7f52c66ebd497bb.bindPopup(popup_7931bfb5c8e863204137a844f01a4b21)
+        ;
+
+        
+    
+    
+            var marker_1243c1b447c04546ca619fac69e83144 = L.marker(
+                [38.627, -90.1994],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_512109fdaa2be657e1d6d03ba14c0ff8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1243c1b447c04546ca619fac69e83144.setIcon(icon_512109fdaa2be657e1d6d03ba14c0ff8);
+        
+    
+        var popup_e5cece7bd0bd877994de44d7db84f952 = L.popup({"maxWidth": 300});
+
+        
+            var html_08eb68c3989abad50041386c8828356e = $(`<div id="html_08eb68c3989abad50041386c8828356e" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Union Avenue Opera     </div>     <div style="font-size:14px;">         <a href='https://unionavenueopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_e5cece7bd0bd877994de44d7db84f952.setContent(html_08eb68c3989abad50041386c8828356e);
+        
+
+        marker_1243c1b447c04546ca619fac69e83144.bindPopup(popup_e5cece7bd0bd877994de44d7db84f952)
+        ;
+
+        
+    
+    
+            var marker_3f7b972ac10bcc3a5bf17e1aaf3c2248 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_cb115c637627b061e948c751f73bd549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3f7b972ac10bcc3a5bf17e1aaf3c2248.setIcon(icon_cb115c637627b061e948c751f73bd549);
+        
+    
+        var popup_60dd291747b52f87709724c5fc398ecc = L.popup({"maxWidth": 300});
+
+        
+            var html_b76341c869e883b57fdd797795a87622 = $(`<div id="html_b76341c869e883b57fdd797795a87622" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         New York City Opera     </div>     <div style="font-size:14px;">         <a href='https://nycopera.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_60dd291747b52f87709724c5fc398ecc.setContent(html_b76341c869e883b57fdd797795a87622);
+        
+
+        marker_3f7b972ac10bcc3a5bf17e1aaf3c2248.bindPopup(popup_60dd291747b52f87709724c5fc398ecc)
+        ;
+
+        
+    
+    
+            var marker_28eaf7ca74469ae3243d25626e09ab84 = L.marker(
+                [40.6782, -73.9442],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_7d831c00de47f730baed93bcb8b8a72e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_28eaf7ca74469ae3243d25626e09ab84.setIcon(icon_7d831c00de47f730baed93bcb8b8a72e);
+        
+    
+        var popup_df4f2996e30f51986b4ee53b9449d2a8 = L.popup({"maxWidth": 300});
+
+        
+            var html_49485a9a204ed0dc59af08317683ab5b = $(`<div id="html_49485a9a204ed0dc59af08317683ab5b" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         American Opera Projects     </div>     <div style="font-size:14px;">         <a href='https://aopopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_df4f2996e30f51986b4ee53b9449d2a8.setContent(html_49485a9a204ed0dc59af08317683ab5b);
+        
+
+        marker_28eaf7ca74469ae3243d25626e09ab84.bindPopup(popup_df4f2996e30f51986b4ee53b9449d2a8)
+        ;
+
+        
+    
+    
+            var marker_ed9376aba5e0f03df620ab8ac6616014 = L.marker(
+                [42.3601, -71.0589],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_48f56cef1821211d578d2b36931bc13c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ed9376aba5e0f03df620ab8ac6616014.setIcon(icon_48f56cef1821211d578d2b36931bc13c);
+        
+    
+        var popup_4430fa452a7db396cee8301ca8469b26 = L.popup({"maxWidth": 300});
+
+        
+            var html_79eefe0fa91c9d82a65db68ac790d8ea = $(`<div id="html_79eefe0fa91c9d82a65db68ac790d8ea" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Boston Lyric Opera     </div>     <div style="font-size:14px;">         <a href='https://blo.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_4430fa452a7db396cee8301ca8469b26.setContent(html_79eefe0fa91c9d82a65db68ac790d8ea);
+        
+
+        marker_ed9376aba5e0f03df620ab8ac6616014.bindPopup(popup_4430fa452a7db396cee8301ca8469b26)
+        ;
+
+        
+    
+    
+            var marker_6df4b1b0bf2cd56a8fd78a2b717bd103 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_6070101860601415bb19a9f6e6ff9b66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6df4b1b0bf2cd56a8fd78a2b717bd103.setIcon(icon_6070101860601415bb19a9f6e6ff9b66);
+        
+    
+        var popup_f12187248246f7ccc0ecb01fdc14b9ce = L.popup({"maxWidth": 300});
+
+        
+            var html_24b2d987149eb095d5f6c7b1e1fc9e79 = $(`<div id="html_24b2d987149eb095d5f6c7b1e1fc9e79" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Heartbeat Opera     </div>     <div style="font-size:14px;">         <a href='https://heartbeatopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_f12187248246f7ccc0ecb01fdc14b9ce.setContent(html_24b2d987149eb095d5f6c7b1e1fc9e79);
+        
+
+        marker_6df4b1b0bf2cd56a8fd78a2b717bd103.bindPopup(popup_f12187248246f7ccc0ecb01fdc14b9ce)
+        ;
+
+        
+    
+    
+            var marker_d7de67e0351d8a34ab3935a347cc0ac3 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_8e0817bb9e775ec7a9eff965c3d36090 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d7de67e0351d8a34ab3935a347cc0ac3.setIcon(icon_8e0817bb9e775ec7a9eff965c3d36090);
+        
+    
+        var popup_6920d6a6d1602ba8c3f337b3264cdcda = L.popup({"maxWidth": 300});
+
+        
+            var html_d6ccc2dd47b124dfcbf48bfb2871ee8b = $(`<div id="html_d6ccc2dd47b124dfcbf48bfb2871ee8b" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         OperaRox Productions     </div>     <div style="font-size:14px;">         <a href='https://operaroxproductions.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_6920d6a6d1602ba8c3f337b3264cdcda.setContent(html_d6ccc2dd47b124dfcbf48bfb2871ee8b);
+        
+
+        marker_d7de67e0351d8a34ab3935a347cc0ac3.bindPopup(popup_6920d6a6d1602ba8c3f337b3264cdcda)
+        ;
+
+        
+    
+    
+            var marker_82cdfec7c0a33b75a816a3c959600a2a = L.marker(
+                [43.0831, -73.7846],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_6526923272b469101d79d39aa1e8c013 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_82cdfec7c0a33b75a816a3c959600a2a.setIcon(icon_6526923272b469101d79d39aa1e8c013);
+        
+    
+        var popup_fd14ab990bd8ef84dad081fde386eb96 = L.popup({"maxWidth": 300});
+
+        
+            var html_d861d29c5d821afcd67def39984712db = $(`<div id="html_d861d29c5d821afcd67def39984712db" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Opera Saratoga     </div>     <div style="font-size:14px;">         <a href='https://operasaratoga.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_fd14ab990bd8ef84dad081fde386eb96.setContent(html_d861d29c5d821afcd67def39984712db);
+        
+
+        marker_82cdfec7c0a33b75a816a3c959600a2a.bindPopup(popup_fd14ab990bd8ef84dad081fde386eb96)
+        ;
+
+        
+    
+    
+            var marker_2d1dab4f799084160db657385e63271a = L.marker(
+                [29.7604, -95.3698],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_586e53ae337cd03bf7e5d277cd9e305d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2d1dab4f799084160db657385e63271a.setIcon(icon_586e53ae337cd03bf7e5d277cd9e305d);
+        
+    
+        var popup_8bfaf5450b9980ad8686136925f298d2 = L.popup({"maxWidth": 300});
+
+        
+            var html_3faa593a3c56b1ffcc6d4f4c0cad92b0 = $(`<div id="html_3faa593a3c56b1ffcc6d4f4c0cad92b0" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Houston Grand Opera     </div>     <div style="font-size:14px;">         <a href='https://houstongrandopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_8bfaf5450b9980ad8686136925f298d2.setContent(html_3faa593a3c56b1ffcc6d4f4c0cad92b0);
+        
+
+        marker_2d1dab4f799084160db657385e63271a.bindPopup(popup_8bfaf5450b9980ad8686136925f298d2)
+        ;
+
+        
+    
+    
+            var marker_89033767a07da99139baa1845e12f798 = L.marker(
+                [42.7038, -74.9243],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_ca8a297c801ba17e7cc5dfc45035857f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_89033767a07da99139baa1845e12f798.setIcon(icon_ca8a297c801ba17e7cc5dfc45035857f);
+        
+    
+        var popup_ab7c70e5b348b6c013b6226ea1094b60 = L.popup({"maxWidth": 300});
+
+        
+            var html_c3353e6cbbf0f7f345e3e79b121e5193 = $(`<div id="html_c3353e6cbbf0f7f345e3e79b121e5193" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Glimmerglass Festival     </div>     <div style="font-size:14px;">         <a href='https://glimmerglass.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_ab7c70e5b348b6c013b6226ea1094b60.setContent(html_c3353e6cbbf0f7f345e3e79b121e5193);
+        
+
+        marker_89033767a07da99139baa1845e12f798.bindPopup(popup_ab7c70e5b348b6c013b6226ea1094b60)
+        ;
+
+        
+    
+    
+            var marker_9ea4fbc0a00ead844b43303bd1211689 = L.marker(
+                [35.687, -105.9378],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_54af84d1d5920bf7f9bb7a47da70bbdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9ea4fbc0a00ead844b43303bd1211689.setIcon(icon_54af84d1d5920bf7f9bb7a47da70bbdc);
+        
+    
+        var popup_6864b57b1875ca8f55e2110160a0e336 = L.popup({"maxWidth": 300});
+
+        
+            var html_1eaee4a1ea22fac15b0de5f2075f2bd5 = $(`<div id="html_1eaee4a1ea22fac15b0de5f2075f2bd5" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Santa Fe Opera     </div>     <div style="font-size:14px;">         <a href='https://santafeopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_6864b57b1875ca8f55e2110160a0e336.setContent(html_1eaee4a1ea22fac15b0de5f2075f2bd5);
+        
+
+        marker_9ea4fbc0a00ead844b43303bd1211689.bindPopup(popup_6864b57b1875ca8f55e2110160a0e336)
+        ;
+
+        
+    
+    
+            var marker_8947b0153f9309c6785b7e85bcc4590e = L.marker(
+                [40.7306, -73.9352],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_c2b6552a77195e131d028663488139c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8947b0153f9309c6785b7e85bcc4590e.setIcon(icon_c2b6552a77195e131d028663488139c4);
+        
+    
+        var popup_2000f275d74a0f179871e78d8142cd25 = L.popup({"maxWidth": 300});
+
+        
+            var html_4a27094b9ef911bd5f28e7ba0023127d = $(`<div id="html_4a27094b9ef911bd5f28e7ba0023127d" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         The Opera Next Door     </div>     <div style="font-size:14px;">         <a href='https://www.theoperanextdoor.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_2000f275d74a0f179871e78d8142cd25.setContent(html_4a27094b9ef911bd5f28e7ba0023127d);
+        
+
+        marker_8947b0153f9309c6785b7e85bcc4590e.bindPopup(popup_2000f275d74a0f179871e78d8142cd25)
+        ;
+
+        
+    
+    
+            var marker_3d201f21a2a4e24577f71e26ee5fae8a = L.marker(
+                [43.6487, -79.3744],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_551200bbe3b025b138625b6ab6afc1e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3d201f21a2a4e24577f71e26ee5fae8a.setIcon(icon_551200bbe3b025b138625b6ab6afc1e4);
+        
+    
+        var popup_7474712db0ef6d24bcf08474896455cf = L.popup({"maxWidth": 300});
+
+        
+            var html_ad212d8f02455387dfffc53ce05df6a0 = $(`<div id="html_ad212d8f02455387dfffc53ce05df6a0" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Tapestry Opera     </div>     <div style="font-size:14px;">         <a href='https://tapestryopera.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_7474712db0ef6d24bcf08474896455cf.setContent(html_ad212d8f02455387dfffc53ce05df6a0);
+        
+
+        marker_3d201f21a2a4e24577f71e26ee5fae8a.bindPopup(popup_7474712db0ef6d24bcf08474896455cf)
+        ;
+
+        
+    
+    
+            var marker_60fccd93653a1ad172812611b944130c = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_c8ce3ccd62debe7ab2135f5db1e640ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_60fccd93653a1ad172812611b944130c.setIcon(icon_c8ce3ccd62debe7ab2135f5db1e640ca);
+        
+    
+        var popup_fe5f8b2d4513db5acc44007ccbae2b69 = L.popup({"maxWidth": 300});
+
+        
+            var html_477f0ea5c5890e5ce9e06c60f47f5023 = $(`<div id="html_477f0ea5c5890e5ce9e06c60f47f5023" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Off-Brand Opera     </div>     <div style="font-size:14px;">         <a href='https://offbrandopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_fe5f8b2d4513db5acc44007ccbae2b69.setContent(html_477f0ea5c5890e5ce9e06c60f47f5023);
+        
+
+        marker_60fccd93653a1ad172812611b944130c.bindPopup(popup_fe5f8b2d4513db5acc44007ccbae2b69)
+        ;
+
+        
+    
+    
+            var marker_08c088e41098661620beb1b54af51c65 = L.marker(
+                [35.9606, -83.9207],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_e1fe6643cd274b1fa7efcc7622ac6f2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_08c088e41098661620beb1b54af51c65.setIcon(icon_e1fe6643cd274b1fa7efcc7622ac6f2a);
+        
+    
+        var popup_b57f94e7035022323d2e5473695d9ac4 = L.popup({"maxWidth": 300});
+
+        
+            var html_3c4d469067ecbefe34fb6d359199c125 = $(`<div id="html_3c4d469067ecbefe34fb6d359199c125" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Marble City Opera     </div>     <div style="font-size:14px;">         <a href='https://www.marblecityopera.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_b57f94e7035022323d2e5473695d9ac4.setContent(html_3c4d469067ecbefe34fb6d359199c125);
+        
+
+        marker_08c088e41098661620beb1b54af51c65.bindPopup(popup_b57f94e7035022323d2e5473695d9ac4)
+        ;
+
+        
+    
+    
+            var marker_dd7d4bef2619db25d85eea0a6df24593 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_2ebd244bff262e939149f4397af7b4ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_dd7d4bef2619db25d85eea0a6df24593.setIcon(icon_2ebd244bff262e939149f4397af7b4ec);
+        
+    
+        var popup_cfb97e6fa3e36203d8814f2db02c8e37 = L.popup({"maxWidth": 300});
+
+        
+            var html_73438d18f69d3b23029ddd968395cc37 = $(`<div id="html_73438d18f69d3b23029ddd968395cc37" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Fresh Squeezed Opera     </div>     <div style="font-size:14px;">         <a href='https://freshsqueezedopera.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_cfb97e6fa3e36203d8814f2db02c8e37.setContent(html_73438d18f69d3b23029ddd968395cc37);
+        
+
+        marker_dd7d4bef2619db25d85eea0a6df24593.bindPopup(popup_cfb97e6fa3e36203d8814f2db02c8e37)
+        ;
+
+        
+    
+    
+            var marker_319524b856a483e02462ff1cc7cdcd0c = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_72061d8c793141a560429415a5002d2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_319524b856a483e02462ff1cc7cdcd0c.setIcon(icon_72061d8c793141a560429415a5002d2d);
+        
+    
+        var popup_b890956bbde462df4fe3dbc10fc148e5 = L.popup({"maxWidth": 300});
+
+        
+            var html_86376fcf6c57ce0e3127ca1b9c810ad7 = $(`<div id="html_86376fcf6c57ce0e3127ca1b9c810ad7" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         New Camerata Opera     </div>     <div style="font-size:14px;">         <a href='https://newcamerataopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_b890956bbde462df4fe3dbc10fc148e5.setContent(html_86376fcf6c57ce0e3127ca1b9c810ad7);
+        
+
+        marker_319524b856a483e02462ff1cc7cdcd0c.bindPopup(popup_b890956bbde462df4fe3dbc10fc148e5)
+        ;
+
+        
+    
+    
+            var marker_479217842ceee58326af18f1b764d3f0 = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_87dc517a8d0759aac2f694c0090fc7d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_479217842ceee58326af18f1b764d3f0.setIcon(icon_87dc517a8d0759aac2f694c0090fc7d6);
+        
+    
+        var popup_f46f31408a4c58a404e0f33df3693a53 = L.popup({"maxWidth": 300});
+
+        
+            var html_99970c1e5b2ca9afa01ef07902187f7d = $(`<div id="html_99970c1e5b2ca9afa01ef07902187f7d" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Pacific Opera Project     </div>     <div style="font-size:14px;">         <a href='https://pacificoperaproject.com' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_f46f31408a4c58a404e0f33df3693a53.setContent(html_99970c1e5b2ca9afa01ef07902187f7d);
+        
+
+        marker_479217842ceee58326af18f1b764d3f0.bindPopup(popup_f46f31408a4c58a404e0f33df3693a53)
+        ;
+
+        
+    
+    
+            var marker_09b2737439344dcce0b5f8b6bc2568a1 = L.marker(
+                [35.4676, -97.5164],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_4050fca05df5679868d42b1727f3228b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_09b2737439344dcce0b5f8b6bc2568a1.setIcon(icon_4050fca05df5679868d42b1727f3228b);
+        
+    
+        var popup_1d606281f515d7662741cc17b2cdbe75 = L.popup({"maxWidth": 300});
+
+        
+            var html_9184bdc991d279ed2c1e0883d57338f9 = $(`<div id="html_9184bdc991d279ed2c1e0883d57338f9" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Painted Sky Opera     </div>     <div style="font-size:14px;">         <a href='https://paintedskyopera.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_1d606281f515d7662741cc17b2cdbe75.setContent(html_9184bdc991d279ed2c1e0883d57338f9);
+        
+
+        marker_09b2737439344dcce0b5f8b6bc2568a1.bindPopup(popup_1d606281f515d7662741cc17b2cdbe75)
+        ;
+
+        
+    
+    
+            var marker_1843bfbeb235306b15554e4f69c0bfac = L.marker(
+                [19.8968, -155.5828],
+                {}
+            ).addTo(marker_cluster_f83fb6ad906bfe615d32c22b1368bdb4);
+        
+    
+            var icon_85773146f6aefcfa861d225d18921849 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1843bfbeb235306b15554e4f69c0bfac.setIcon(icon_85773146f6aefcfa861d225d18921849);
+        
+    
+        var popup_7bd4a0b12c749c3bad9f8a4ee519bbdf = L.popup({"maxWidth": 300});
+
+        
+            var html_7763e1b2e8f5599c0bfc9b9ce252f884 = $(`<div id="html_7763e1b2e8f5599c0bfc9b9ce252f884" style="width: 100.0%; height: 100.0%;">     <div style="font-size:16px; font-weight:bold;">         Hawaii Performing Arts Festival     </div>     <div style="font-size:14px;">         <a href='https://www.hawaiiperformingartsfestival.org' target='_blank'>Visit Website</a>     </div>     </div>`)[0];
+            popup_7bd4a0b12c749c3bad9f8a4ee519bbdf.setContent(html_7763e1b2e8f5599c0bfc9b9ce252f884);
+        
+
+        marker_1843bfbeb235306b15554e4f69c0bfac.bindPopup(popup_7bd4a0b12c749c3bad9f8a4ee519bbdf)
+        ;
+
+        
+    
+</script>
+</html>
